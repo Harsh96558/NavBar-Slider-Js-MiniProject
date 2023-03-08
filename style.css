@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(231, 226, 226);
+    line-height: 2.2;
+    font-size: .875rem;
+}
+.logo{
+  
+    object-fit: cover;
+    width: 50px
+  
+  
+}
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+    line-height: 2.2rem;
+}
+nav{
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+.fa-bars{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: gray;
+}
+.fa-bars:hover{
+    color: rgb(244, 101, 101);
+}
+.menu a{
+    color: gray;
+    letter-spacing: .1rem;
+    display: block;
+    padding: .5rem 1rem;
+    transition: all 500ms linear;
+}
+.menu a:hover{
+    background-color: rgb(254, 188, 207);
+    color: rgb(244, 101, 101);
+    padding-left: 1.5rem;
+}
+
+
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu{
+    height: 0px;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.show-menu{
+    height: 10rem;
+}
+@media (min-width:800px){
+    .nav-main{
+       
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-header{
+        padding: 0;
+      
+
+    }
+    .fa-bars{
+    
+       visibility: hidden;
+    }
+    .menu{
+        display: flex;
+        height: auto;
+    }
+
+    .menu a{
+        padding: 0;
+        margin: 0 .5rem;
+    }
+
+    .menu a:hover{
+        padding: 0;
+        background-color: transparent;
+    }
+
+}
